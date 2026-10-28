@@ -45,7 +45,7 @@ test('every entry default-exports a v1 module with function hooks', async () => 
 });
 
 const BLOCK =
-  'USER HARD RULES (override Vitrine templates, apply to every role): 1. Replies, stage reports, gate questions and PR text: 3 lines or fewer, answer first, no headers, tables or caveat lists. 2. Never commit or push unless I explicitly ask. 3. Create branches and worktrees from origin/<default-branch> after git fetch, never the local HEAD; verify base and name right after creation. 4. Branch name: brais.cabofelpete/<TICKET>-<desc>; put the Jira ticket ID in from the start, never rename. 5. Everything else: follow ~/.claude/CLAUDE.md.';
+  'USER HARD RULES (override Vitrine templates, apply to every role): 1. Replies, stage reports, gate questions and PR text: 3 lines or fewer, answer first, no headers, tables or caveat lists. 2. Never commit or push unless I explicitly ask. 3. Branch name: brais.cabofelpete/<desc>, no ticket ID. 4. Everything else: follow ~/.claude/CLAUDE.md.';
 
 async function hookWithHome(setup) {
   const { mkdtempSync, mkdirSync } = await import('node:fs');
