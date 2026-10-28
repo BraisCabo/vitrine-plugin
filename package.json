@@ -1,0 +1,17 @@
+{
+  "name": "vitrine-plugin-brais-rules",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A Vitrine external plugin, built against the public plugin API v1.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3"
+  }
+}

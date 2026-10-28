@@ -1,0 +1,14 @@
+{
+  "slug": "brais-rules",
+  "name": "Brais Rules",
+  "description": "Makes Brais's rules win over Vitrine's built-in prompts.",
+  "version": "0.1.0",
+  "apiVersion": 1,
+  "engines": {
+    "vitrine": ">=0.2.0"
+  },
+  "scope": "global",
+  "entries": {
+    "server": "server.js"
+  }
+}
